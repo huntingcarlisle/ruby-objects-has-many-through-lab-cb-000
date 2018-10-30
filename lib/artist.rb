@@ -24,4 +24,8 @@ class Artist
     return Song.all.collect{|song|song.artist == self}
   end
   
+  def genres
+    return Genre.all.collect{|genre|genre.artist == self}
+  end
+  
 end
