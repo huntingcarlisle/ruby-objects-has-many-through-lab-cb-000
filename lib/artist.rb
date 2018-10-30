@@ -26,7 +26,7 @@ class Artist
   end
   
   def genres
-    return @genres.map{|song|song.genre == self}
+    return songs.map{|song|song.genre == self}
   end
   
 end
