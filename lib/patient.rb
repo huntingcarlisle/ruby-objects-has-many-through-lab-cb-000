@@ -14,11 +14,11 @@ class Patient
     return @@all
   end
   
-  def new_appointment(patient, date)
-   appt = Appointment.new(patient, self, date)
-   @doctors << new_song
-   @appointments << genre
-   return new_song
+  def new_appointment(doctor, date)
+   appt = Appointment.new(self, doctor, date)
+   @doctors << doctor
+   @appointments << appt
+   return appt
   end
   
   def appointments
