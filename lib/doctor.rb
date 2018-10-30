@@ -18,7 +18,7 @@ class Doctor
    appt = Appointment.new(patient, self, date)
    @patients << patient
    @appointments << appt
-   return new_song
+   return appt
   end
   
   def appointments
