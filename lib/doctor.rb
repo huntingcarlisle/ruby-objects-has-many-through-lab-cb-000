@@ -16,8 +16,8 @@ class Doctor
   
   def new_appointment(patient, date)
    appt = Appointment.new(patient, self, date)
-   @patients << new_song
-   @appointments << genre
+   @patients << patient
+   @appointments << appt
    return new_song
   end
   
