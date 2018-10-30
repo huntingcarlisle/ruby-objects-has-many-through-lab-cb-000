@@ -17,7 +17,7 @@ class Genre
   end
   
   def artists
-    return songs.map{|song|song.artists}
+    return songs.map{|song|song.artist}
   end
     
   
