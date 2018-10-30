@@ -22,11 +22,11 @@ class Artist
   end
   
   def songs
-    return Song.all.collect{|song|song.artist == self}
+    return Song.all.select{|song|song.artist == self}
   end
   
   def genres
-    return Genre.all.collect{|genre|genre.artist == self}
+    return Genre.all.select{|genre|genre.artist == self}
   end
   
 end
